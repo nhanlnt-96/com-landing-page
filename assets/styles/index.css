@@ -1568,6 +1568,30 @@ body {
   transform: translateY(3px);
 }
 
+/*INFO: search modal styles*/
+.search-modal .search-modal-body .search-modal-body__input {
+  position: relative;
+}
+
+.search-modal .search-modal-body .search-modal-body__input > input {
+  color: rgba(0, 0, 0, 1);
+  padding: 12px 40px 12px 12px;
+  width: 100%;
+  border-radius: 74px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  outline: none;
+}
+
+.search-modal .search-modal-body .search-modal-body__input > img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
 @keyframes faq-expand {
   0% {
     top: -100%;

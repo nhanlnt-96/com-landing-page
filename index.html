@@ -63,7 +63,11 @@
 
         <div class="header-menu__right">
           <!--        INFO: header search icon button start-->
-          <button class="flex-shrink-0 header-menu__search-icon">
+          <button
+            class="flex-shrink-0 header-menu__search-icon"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+          >
             <img
               src="./assets/images/icons/search-icon.webp"
               alt="search icon"
@@ -1437,6 +1441,43 @@
       </div>
     </footer>
     <!--    INFO: footer end-->
+
+    <!--    INFO: search modal container start-->
+    <div
+      class="modal fade search-modal"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body search-modal-body">
+            <div class="search-modal-body__input">
+              <input
+                type="text"
+                name="searchText"
+                id="searchText"
+                placeholder="Search"
+              />
+              <img
+                src="./assets/images/icons/search-icon.webp"
+                alt="search icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    INFO: search modal container end-->
 
     <!--  INFO: bootstrap scripts-->
     <script
