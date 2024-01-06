@@ -40,6 +40,17 @@ body {
   color: #ffffff;
 }
 
+.badge-custom {
+  border-radius: 14px;
+  background: rgba(3, 169, 244, 0.12);
+  color: rgba(33, 150, 243, 1);
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  padding: 4px 14px;
+  display: inline-block;
+}
+
 /*INFO: header logo styles*/
 .header-container {
   background-color: rgba(221, 240, 255, 1);
@@ -646,6 +657,10 @@ body {
   margin-bottom: 0;
 }
 
+.pc-games-slide__item .item-header .item-header__detail > .badge-custom {
+  margin-top: 14px;
+}
+
 .item-header__detail .game-rating > .fa-star {
   color: rgba(230, 126, 34, 1);
 }
@@ -659,22 +674,127 @@ body {
   margin-bottom: 0;
 }
 
-.item-header__detail .game-tag {
-  border-radius: 14px;
-  background: rgba(3, 169, 244, 0.12);
-  color: rgba(33, 150, 243, 1);
-  font-size: 13px;
-  font-weight: 400;
-  text-align: left;
-  padding: 4px 14px;
-  margin-top: 14px;
-  display: inline-block;
-}
-
 .pc-games-slide__item .item-body-text {
   font-size: 15px;
   font-weight: 400;
   text-align: left;
   margin-top: 14px;
   margin-bottom: 10px;
+}
+
+.product-section__body-detail .multimedia-slide {
+  width: 100%;
+  padding: 60px 10px;
+}
+
+@media (min-width: 1024px) {
+  .product-section__body-detail .pc-games-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.multimedia-slide__item {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(88, 88, 88, 0.11);
+}
+
+@media (min-width: 768px) {
+}
+
+.multimedia-slide__item > .item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.multimedia-slide__item > .item-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.multimedia-slide__item > .multimedia-slide__item-content > .item-detail {
+  margin-left: 14px;
+  margin-right: 0;
+  flex: 2;
+}
+
+@media (min-width: 1024px) {
+  .multimedia-slide__item > .multimedia-slide__item-content > .item-detail {
+    margin-right: 14px;
+  }
+}
+
+.item-detail__header .item-detail__header-title {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .item-detail__header .item-detail__header-title {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+}
+
+.multimedia-slide__item-content > .item-detail > .item-detail__content {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.multimedia-slide__item-content > .item-cta {
+  margin-left: 14px;
+  margin-top: 8px;
+  width: fit-content;
+}
+
+@media (min-width: 1024px) {
+  .multimedia-slide__item-content > .item-cta {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.multimedia-slide__item-content > .item-cta > .btn-custom {
+  max-width: 128px;
+  min-width: 128px;
+  width: 100%;
+}
+
+.multimedia-slide__item-content > .item-cta > .item-cta__download-info {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 6px;
+}
+
+@media (min-width: 576px) {
+  .multimedia-slide__item-content > .item-cta > .item-cta__download-info {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .multimedia-slide__item-content > .item-cta > .item-cta__download-info {
+    margin-top: 0;
+    margin-left: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .multimedia-slide__item-content > .item-cta > .item-cta__download-info {
+    margin-top: 6px;
+    margin-left: 0;
+  }
 }
