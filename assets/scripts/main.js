@@ -49,3 +49,28 @@ if (carouselButtonsEl.length) {
     });
   }
 }
+
+// INFO: FAQ ctas
+const faqExpandButtons = document.querySelectorAll('[aria-label="faqButton"]');
+
+if (faqExpandButtons.length) {
+  for (const elItem of faqExpandButtons) {
+    elItem.addEventListener("click", () => {
+      const expandSectionId = elItem.getAttribute("aria-controls");
+      const faqDetailSectionEl = document.getElementById(expandSectionId);
+
+      // INFO: show/hide button icon
+      if (elItem.classList.contains("show")) {
+        elItem.classList.remove("show");
+      } else {
+        elItem.classList.add("show");
+      }
+      // INFO: show faq detail section
+      if (faqDetailSectionEl.classList.contains("show")) {
+        faqDetailSectionEl.classList.remove("show");
+      } else {
+        faqDetailSectionEl.classList.add("show");
+      }
+    });
+  }
+}
