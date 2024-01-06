@@ -27,66 +27,66 @@
     <title>Trang chủ - Soft</title>
   </head>
   <body>
+  <!--  INFO: header start-->
+  <nav
+      class="navbar navbar-expand-lg header-container"
+      id="header-container-el"
+  >
+    <div class="container d-flex justify-content-between">
+      <!--        INFO: logo start-->
+      <div class="header-logo">
+        <div class="header-logo__container">
+          <a href="#" class="header-logo__wrapper">
+            <img
+                src="./assets/images/logo.png"
+                alt="logo"
+                class="logo-image"
+            />
+          </a>
+        </div>
+      </div>
+      <!--        INFO: logo end-->
+
+      <!--        INFO: header menu start-->
+      <div
+          class="collapse navbar-collapse header-menu"
+          id="header-menu-items"
+      >
+        <div class="navbar-nav m-auto header-menu__container">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          <a class="nav-link" href="#products">Product</a>
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+        </div>
+      </div>
+      <!--        INFO: header menu end-->
+
+      <div class="header-menu__right">
+        <!--        INFO: header search icon button start-->
+        <button
+            class="flex-shrink-0 header-menu__search-icon"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+        >
+          <img
+              src="./assets/images/icons/search-icon.webp"
+              alt="search icon"
+              class="search-icon-image"
+          />
+        </button>
+        <!--        INFO: header search icon button end-->
+
+        <!--INFO: header toggle button mobile view start-->
+        <button class="navbar-toggler" type="button" id="header-menu-toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--INFO: header toggle button mobile view end-->
+      </div>
+    </div>
+  </nav>
+  <!--  INFO: header end-->
+
    <div class="overflow-x-hidden">
-     <!--  INFO: header start-->
-     <nav
-         class="navbar navbar-expand-lg header-container"
-         id="header-container-el"
-     >
-       <div class="container d-flex justify-content-between">
-         <!--        INFO: logo start-->
-         <div class="header-logo">
-           <div class="header-logo__container">
-             <a href="#" class="header-logo__wrapper">
-               <img
-                   src="./assets/images/logo.png"
-                   alt="logo"
-                   class="logo-image"
-               />
-             </a>
-           </div>
-         </div>
-         <!--        INFO: logo end-->
-
-         <!--        INFO: header menu start-->
-         <div
-             class="collapse navbar-collapse header-menu"
-             id="header-menu-items"
-         >
-           <div class="navbar-nav m-auto header-menu__container">
-             <a class="nav-link active" aria-current="page" href="#home">Home</a>
-             <a class="nav-link" href="#products">Product</a>
-             <a class="nav-link" href="#features">Features</a>
-             <a class="nav-link" href="#faq">FAQ</a>
-           </div>
-         </div>
-         <!--        INFO: header menu end-->
-
-         <div class="header-menu__right">
-           <!--        INFO: header search icon button start-->
-           <button
-               class="flex-shrink-0 header-menu__search-icon"
-               data-bs-toggle="modal"
-               data-bs-target="#searchModal"
-           >
-             <img
-                 src="./assets/images/icons/search-icon.webp"
-                 alt="search icon"
-                 class="search-icon-image"
-             />
-           </button>
-           <!--        INFO: header search icon button end-->
-
-           <!--INFO: header toggle button mobile view start-->
-           <button class="navbar-toggler" type="button" id="header-menu-toggle">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <!--INFO: header toggle button mobile view end-->
-         </div>
-       </div>
-     </nav>
-     <!--  INFO: header end-->
-
      <!--    INFO: main body start-->
      <main id="home">
        <!--      INFO: banner section start-->
