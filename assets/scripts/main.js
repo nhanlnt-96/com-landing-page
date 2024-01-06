@@ -29,3 +29,23 @@ document.addEventListener("click", (event) => {
   );
   if (!isClickInsideHeaderToggleBtn) headerMenuItemsEl.classList.remove("show");
 });
+
+// INFO: products section carousel
+const carouselButtonsEl = document.querySelectorAll(
+  '[data-bs-target="#productsSectionCarousel"]',
+);
+
+if (carouselButtonsEl.length) {
+  for (const elItem of carouselButtonsEl) {
+    elItem.addEventListener("click", (event) => {
+      const dataBsSlideToNumber = Number(
+        event.target.getAttribute("data-bs-slide-to") || 0,
+      );
+
+      carouselButtonsEl.forEach((elItem, index) => {
+        if (index === dataBsSlideToNumber) elItem.classList.add("active");
+        else elItem.classList.remove("active");
+      });
+    });
+  }
+}
